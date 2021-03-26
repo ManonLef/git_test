@@ -1,0 +1,1 @@
+This is Manon's first git project!
