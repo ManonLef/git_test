@@ -5,12 +5,21 @@
   <meta charset="UTF-8"/>
 </head>
 <body>
-  <!--Below is part of the javascript exercise 2 from https://javascript.info/ifelse. -->
+  <!--Below is part of the javascript exercise 4 from https://javascript.info/ifelse. -->
   <script>
- //Rewrite this 'if' using the conditional operator '?':
+ //Rewrite if..else using multiple ternary operators '?'.
 
-let result = (a + b < 4) ? 'Below' : 'Over';
+ let message;
 
+if (login == 'Employee') {
+  message = 'Hello';
+} else if (login == 'Director') {
+  message = 'Greetings';
+} else if (login == '') {
+  message = 'No login';
+} else {
+  message = '';
+}
 
   </script>
 </body>
