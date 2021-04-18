@@ -27,13 +27,17 @@
 
   </body>
   <script>
-    let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    let names = ['Noob', 'Wouter', 'Anne', 'Francesca', 'Manon', 'Tina', 'Rikkert', 'Jada']
     let para = document.createElement('p');
 
     // Add your code here
       function chooseName(){
-       console.log (names[Math.round(Math.random() * names.length)]);
+       let randomName = (names[Math.floor(Math.random() * names.length)]); //has to be floor or you'll get 0
+       para.textContent = randomName;
+       console.log (randomName);
       }
+
+      chooseName();
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
